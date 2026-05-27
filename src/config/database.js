@@ -1,9 +1,14 @@
-const mongoose= require("mongoose");
-const connectDB=async()=>{
-await mongoose.connect("mongodb+srv://DEVtinder:Ayosz2204@devtinder.tlpzngp.mongodb.net/devtinder");
+require("dotenv").config();
+require("dns").setDefaultResultOrder("ipv4first");
+
+const mongoose = require("mongoose");
+
+const connectDB = async () => {
+  console.log("Attempting to connect to:", process.env.MONGODB_URI);
+
+  await mongoose.connect(process.env.MONGODB_URI);
+
+  console.log("MongoDB connected successfully");
 };
 
-module.exports=connectDB; 
-
-
-                
+module.exports = connectDB;
