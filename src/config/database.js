@@ -1,4 +1,3 @@
-require("dotenv").config();
 require("dns").setDefaultResultOrder("ipv4first");
 
 const mongoose = require("mongoose");

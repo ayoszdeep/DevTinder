@@ -1,5 +1,5 @@
 const express = require("express");
-const connectDB = require("./config/database");
+const { connectDB, serverConfig } = require("./config");
 const cors=require("cors");
 const app = express();
 const cookieParser = require("cookie-parser");
@@ -13,22 +13,15 @@ app.use(
   })
 );
 
-const auth    = require("./routes/auth");    // ✅ correct
-const profile = require("./routes/profile"); // ✅ correct
-const req     = require("./routes/req");     // ✅ correct
-const user =require("./routes/user");
+const v1Router = require("./routes/v1/index.router");
 
+app.use("/api/v1", v1Router);
 
-app.use("/",auth);
-app.use("/",profile);
-app.use("/",req);
-app.use("/",user);
 connectDB().then(() => {
     console.log("Database connectted successfully");
-    app.listen("7777", () => {
+    app.listen(serverConfig.PORT, () => {
         console.log("sever is listening to the port ");
     });
-    /// we are first connecting to the DB then only we are connecting to the server;    
 
 }).catch((err) => {
     console.log("Database is not connected successfully ");
