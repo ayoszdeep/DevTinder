@@ -5,4 +5,6 @@ const find = (query) => connectionRequest.find(query);
 const createRequest = (data) => new connectionRequest(data);
 const saveRequest = (request) => request.save();
 
-module.exports = { findOne, find, createRequest, saveRequest };
+const deleteMany = (query) => connectionRequest.deleteMany(query);
+
+module.exports = { findOne, find, createRequest, saveRequest, deleteMany };

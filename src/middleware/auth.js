@@ -1,30 +1,10 @@
-// earlier lec
 
-// const User = require("../models/user");
-
-// const Adminauth=(req,res,next)=>{
-//     console.log("Admin auth is checking");
-    
-//     const token ="xyz";
-//     const ifauthorized=token==="xyz";
-//     if(!ifauthorized){
-//         res.status(401).send("unuthorized acess");
-
-//     }
-//     else{
-//         next();
-//     }
-
-// };
 
 const jwt = require("jsonwebtoken");
 
 const Useer=require("../models/user");
 
 const profileauth= async (req,res,next)=>{
-    //read the token from the user 
-       // validate the token
-    //find the username
     try {
         const readcookie=req.cookies;
     const {token}=readcookie;
@@ -48,16 +28,6 @@ const profileauth= async (req,res,next)=>{
         res.status(404).send("error is there");
         
     }
-    
-
-
-
-
-
- 
-
- 
-
 };
 module.exports={
     profileauth

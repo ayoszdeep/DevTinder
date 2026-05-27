@@ -1,0 +1,56 @@
+{"level":"error","message":"Please include firstName, lastName, emailId, and password","timestamp":"05-28-2026 02:34:22","correlationId":"5ee735d6-ff24-414f-9eef-2038fee521b9","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Please include firstName, lastName, emailId, and password","timestamp":"05-28-2026 02:37:09","correlationId":"a5f5c43a-2141-4f93-97a7-e6e40a0d0911","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"send right status","timestamp":"05-28-2026 02:37:09","correlationId":"009b770b-8a64-4797-a47f-4bcff9523be2","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Please include firstName, lastName, emailId, and password","timestamp":"05-28-2026 02:38:03","correlationId":"cc5d0d88-a855-4f1b-9309-a1bc6fd57fa8","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"first name is too big or too small","timestamp":"05-28-2026 02:38:03","correlationId":"d7bfcda0-c5ce-4039-8685-efff16affefd","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Invalid email format","timestamp":"05-28-2026 02:38:03","correlationId":"b1446bf7-a350-4ac8-8d59-2ecb5bb17208","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Incorrect password","timestamp":"05-28-2026 02:38:03","correlationId":"97d3ce99-d1c8-4d31-b806-b6283d9c6849","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"u want more user data to edit ","timestamp":"05-28-2026 02:38:04","correlationId":"974395e7-67ff-482c-a38e-9a36c6509b6f","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"send right status","timestamp":"05-28-2026 02:38:04","correlationId":"9332d63e-4a3d-4948-8077-2d8a721cb6c6","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"not user there","timestamp":"05-28-2026 02:38:04","correlationId":"328d3425-d82a-44f7-b086-78eab1c47bc4","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Invalid status. Use 'accepted' or 'rejected'.","timestamp":"05-28-2026 02:38:04","correlationId":"997a26cd-fe74-4496-8f2b-684f62067142","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Please include firstName, lastName, emailId, and password","timestamp":"05-28-2026 02:38:16","correlationId":"44d9f8fe-59db-462b-9367-e29a6fb36a3e","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Invalid email format","timestamp":"05-28-2026 02:38:16","correlationId":"648201b6-5a07-4ef6-94ba-670c4e0d08e4","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Please include firstName, lastName, emailId, and password","timestamp":"05-28-2026 02:38:26","correlationId":"bcfd3901-8d50-4fbe-92ec-a995201b9c1d","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Invalid email format","timestamp":"05-28-2026 02:38:26","correlationId":"49e13b5c-ad2a-4b13-b96c-78c71f17b4f3","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"u want more user data to edit ","timestamp":"05-28-2026 02:38:26","correlationId":"9ea39fcb-86b8-4e21-9fbe-ec951a775b14","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"send right status","timestamp":"05-28-2026 02:38:27","correlationId":"396ed5d3-3be2-444b-b65a-3f3a37bbd1e0","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"not user there","timestamp":"05-28-2026 02:38:28","correlationId":"2d955b6a-d323-450f-9e32-aaae9f079c0a","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Invalid status. Use 'accepted' or 'rejected'.","timestamp":"05-28-2026 02:38:28","correlationId":"fc188644-7d6e-4d63-9975-7bc81dda3d4d","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"connection request is not valid ","timestamp":"05-28-2026 02:38:28","correlationId":"bddedcd0-2abd-43cb-8a11-092f299bd07a","data":{"statusCode":404,"name":"NotFoundError"}}
+{"level":"error","message":"Please include firstName, lastName, emailId, and password","timestamp":"05-28-2026 02:38:46","correlationId":"2aaf7e9e-0e02-49aa-868a-31270f9370cc","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Invalid email format","timestamp":"05-28-2026 02:38:46","correlationId":"61791f5d-f9f4-4c08-8867-7eb1f8fb2247","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"u want more user data to edit ","timestamp":"05-28-2026 02:38:47","correlationId":"ae6e0f7e-90fa-4445-a554-a6395677fe07","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"send right status","timestamp":"05-28-2026 02:38:47","correlationId":"1312b42e-8cd6-47df-a064-e6fa24e2f4f4","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"not user there","timestamp":"05-28-2026 02:38:48","correlationId":"27fc057a-2d10-4839-a7db-860963b6e4a9","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Invalid status. Use 'accepted' or 'rejected'.","timestamp":"05-28-2026 02:38:48","correlationId":"80060a48-6341-427a-a576-998e305d6269","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"connection request is not valid ","timestamp":"05-28-2026 02:38:48","correlationId":"3f340a2f-ac44-44ec-b0af-f902accb1d40","data":{"statusCode":404,"name":"NotFoundError"}}
+{"level":"error","message":"u want more user data to edit ","timestamp":"05-28-2026 02:38:52","correlationId":"dbd10e10-f972-4562-b848-0e77449341d4","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Please include firstName, lastName, emailId, and password","timestamp":"05-28-2026 02:40:10","correlationId":"3dbbea39-a9bd-4dda-b587-6d37520198b0","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Invalid email format","timestamp":"05-28-2026 02:40:10","correlationId":"aff8e24e-24f7-42d9-af2d-b459042017f6","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"u want more user data to edit ","timestamp":"05-28-2026 02:40:11","correlationId":"c0151ab3-939c-45c0-a4e6-07b7ff0c9cfe","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"send right status","timestamp":"05-28-2026 02:40:11","correlationId":"98d49de7-7b1e-4310-8972-28dc56232cfc","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"not user there","timestamp":"05-28-2026 02:40:12","correlationId":"012f2e7d-ab4d-4f72-ac73-bb7b485144d6","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Invalid status. Use 'accepted' or 'rejected'.","timestamp":"05-28-2026 02:40:12","correlationId":"109f6507-512f-4ce9-82c7-e2a816b28d9c","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"connection request is not valid ","timestamp":"05-28-2026 02:40:12","correlationId":"01623bf2-e511-4470-b175-dcd883d9adfe","data":{"statusCode":404,"name":"NotFoundError"}}
+{"level":"error","message":"Email id not found","timestamp":"05-28-2026 02:45:17","correlationId":"b9cd3832-d4ab-4e32-b416-67ab8b354ade","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"send right status","timestamp":"05-28-2026 02:45:17","correlationId":"6fbfe95f-c003-4b8c-812c-dc024848d8b4","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"connection request is not valid ","timestamp":"05-28-2026 02:45:17","correlationId":"b0236835-ecfe-495a-bf9a-8a7e43deedc0","data":{"statusCode":404,"name":"NotFoundError"}}
+{"level":"error","message":"Please include firstName, lastName, emailId, and password","timestamp":"05-28-2026 02:52:43","correlationId":"79118271-b1ef-4779-a3c4-de98efdb76c0","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Invalid email format","timestamp":"05-28-2026 02:52:43","correlationId":"95b59b12-fb40-4ad5-9da4-26e0433d84c4","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"u want more user data to edit ","timestamp":"05-28-2026 02:52:44","correlationId":"ea583023-7091-4a9a-8ab2-393dfb4ef8b2","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"send right status","timestamp":"05-28-2026 02:52:44","correlationId":"d0501eff-6b44-45de-a466-1643f9e9f3cc","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"not user there","timestamp":"05-28-2026 02:52:44","correlationId":"b7e978c5-52c0-482e-8e2d-a0c96242e8d5","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Invalid status. Use 'accepted' or 'rejected'.","timestamp":"05-28-2026 02:52:45","correlationId":"a76c574c-9fd2-4d12-b179-01710e3c201b","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"connection request is not valid ","timestamp":"05-28-2026 02:52:45","correlationId":"50074783-503b-4349-8e00-3c8aca77920d","data":{"statusCode":404,"name":"NotFoundError"}}
+{"level":"error","message":"Please include firstName, lastName, emailId, and password","timestamp":"05-28-2026 02:53:07","correlationId":"220fea79-39eb-47b1-96bf-c145c9482525","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Invalid email format","timestamp":"05-28-2026 02:53:07","correlationId":"6bb5a83b-b5b4-43cf-95be-bb86d4de0673","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"send right status","timestamp":"05-28-2026 02:53:08","correlationId":"a5dc8cbe-d69b-42fa-872c-81ca34f10ce5","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"connection request is not valid ","timestamp":"05-28-2026 02:53:08","correlationId":"ca52c24c-d0ff-4caa-8bcf-8c15b1c2e20d","data":{"statusCode":404,"name":"NotFoundError"}}
+{"level":"error","message":"Please include firstName, lastName, emailId, and password","timestamp":"05-28-2026 02:53:36","correlationId":"9fd7a2fb-27dd-4d57-aeee-4ba7b2090e44","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Invalid email format","timestamp":"05-28-2026 02:53:36","correlationId":"721cbfd9-dc0a-4a49-b4d8-431eeceefe47","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"u want more user data to edit ","timestamp":"05-28-2026 02:53:36","correlationId":"3772bd79-d0a8-451f-a03f-1370a3ff6fb0","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"send right status","timestamp":"05-28-2026 02:53:36","correlationId":"fdb815a1-9957-49c7-af49-4496cd671f1f","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"not user there","timestamp":"05-28-2026 02:53:36","correlationId":"f15838d3-ee9f-4114-903d-af23a6d7c7ad","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"Invalid status. Use 'accepted' or 'rejected'.","timestamp":"05-28-2026 02:53:36","correlationId":"2df03f01-1d2e-422a-a3bc-50804fedc83e","data":{"statusCode":400,"name":"BadRequestError"}}
+{"level":"error","message":"connection request is not valid ","timestamp":"05-28-2026 02:53:37","correlationId":"ba7fd88d-1009-46a1-a2ed-10509bd5608a","data":{"statusCode":404,"name":"NotFoundError"}}

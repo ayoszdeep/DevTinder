@@ -1,34 +1,25 @@
 const validator = require("validator");
-
+const { BadRequestError } = require("./errors/app.error");
+const { PROFILE_EDITABLE_FIELDS } = require("../constants");
 
 const validatorcheck = (req) => {
     const { firstName, lastName, emailId, password } = req.body;
 
-    // First name length check
     if (firstName.length < 4 || firstName.length > 50) {
-        throw new Error("first name is too big or too small");
+        throw new BadRequestError("first name is too big or too small");
     }
 
-    // Strong password check
     if (!validator.isStrongPassword(password)) {
-        throw new Error("password is weak");
+        throw new BadRequestError("password is weak");
     }
 
-    // You can also validate email here
     if (!validator.isEmail(emailId)) {
-        throw new Error("invalid email address");
+        throw new BadRequestError("invalid email address");
     }
 };
 
-const ValidateprofileEditData=(req)=>
-{
-    
-   const AllowedFields = ["gender", "age", "skills", "about", "emailId", "profilePic"];
-    const isAllowed=Object.keys(req.body).every(i=>AllowedFields.includes(i));
+const ValidateprofileEditData = (req) => {
+    return Object.keys(req.body).every(i => PROFILE_EDITABLE_FIELDS.includes(i));
+};
 
-    return isAllowed;
-   
-
-}
-
-module.exports = {validatorcheck,ValidateprofileEditData};
+module.exports = { validatorcheck, ValidateprofileEditData };

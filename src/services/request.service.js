@@ -1,57 +1,59 @@
-const connectionRequestRepository = require("../repositories/connectionRequest.repository");
-const userRepository = require("../repositories/user.repository");
+const { BadRequestError, NotFoundError } = require("../utils/errors/app.error");
+const { ALLOWED_REQUEST_STATUS, ALLOWED_REVIEW_STATUS } = require("../constants");
 
-const sendConnectionRequest = async (senderId, receiverId, status) => {
-    const isAllowed = ["interested", "ignored"];
-    if (!isAllowed.includes(status)) {
-        throw new Error("send right status");
-    }
+const createRequestService = ({ userRepository, connectionRequestRepository }) => {
+    const sendConnectionRequest = async (senderId, receiverId, status) => {
+        if (!ALLOWED_REQUEST_STATUS.includes(status)) {
+            throw new BadRequestError("send right status");
+        }
 
-    const touser = await userRepository.findById(receiverId);
-    if (!touser) {
-        throw new Error("not user there");
-    }
+        const touser = await userRepository.findById(receiverId);
+        if (!touser) {
+            throw new BadRequestError("not user there");
+        }
 
-    const existingOne = await connectionRequestRepository.findOne({
-        $or: [
-            { SenderConnection: senderId, RecieverConnection: receiverId },
-            { SenderConnection: receiverId, RecieverConnection: senderId },
-        ],
-    });
+        const existingOne = await connectionRequestRepository.findOne({
+            $or: [
+                { SenderConnection: senderId, RecieverConnection: receiverId },
+                { SenderConnection: receiverId, RecieverConnection: senderId },
+            ],
+        });
 
-    if (existingOne) {
-        throw new Error("connection already exists");
-    }
+        if (existingOne) {
+            throw new BadRequestError("connection already exists");
+        }
 
-    const connectionRequest = connectionRequestRepository.createRequest({
-        SenderConnection: senderId,
-        RecieverConnection: receiverId,
-        status
-    });
+        const connectionRequest = connectionRequestRepository.createRequest({
+            SenderConnection: senderId,
+            RecieverConnection: receiverId,
+            status
+        });
 
-    const data = await connectionRequestRepository.saveRequest(connectionRequest);
-    return data;
+        const data = await connectionRequestRepository.saveRequest(connectionRequest);
+        return data;
+    };
+
+    const reviewConnectionRequest = async (loggedInUserId, status, requestId) => {
+        if (!ALLOWED_REVIEW_STATUS.includes(status)) {
+            throw new BadRequestError("Invalid status. Use 'accepted' or 'rejected'.");
+        }
+
+        const connectionRequests = await connectionRequestRepository.findOne({
+            _id: requestId,
+            RecieverConnection: loggedInUserId,
+            status: "interested",
+        });
+
+        if (!connectionRequests) {
+            throw new NotFoundError("connection request is not valid ");
+        }
+
+        connectionRequests.status = status;
+        const data = await connectionRequestRepository.saveRequest(connectionRequests);
+        return data;
+    };
+
+    return { sendConnectionRequest, reviewConnectionRequest };
 };
 
-const reviewConnectionRequest = async (loggedInUserId, status, requestId) => {
-    const isAllowedStatus = ["accepted", "rejected"];
-    if (!isAllowedStatus.includes(status)) {
-        throw new Error("Invalid status. Use 'accepted' or 'rejected'.");
-    }
-
-    const connectionRequests = await connectionRequestRepository.findOne({
-        _id: requestId,
-        RecieverConnection: loggedInUserId,
-        status: "interested",
-    });
-
-    if (!connectionRequests) {
-        throw new Error("connection request is not valid ");
-    }
-
-    connectionRequests.status = status;
-    const data = await connectionRequestRepository.saveRequest(connectionRequests);
-    return data;
-};
-
-module.exports = { sendConnectionRequest, reviewConnectionRequest };
+module.exports = createRequestService;

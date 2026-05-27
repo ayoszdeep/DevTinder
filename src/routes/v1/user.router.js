@@ -1,6 +1,7 @@
 const express = require("express");
 const { profileauth } = require("../../middleware/auth");
-const userController = require("../../controllers/user.controller");
+const di = require("../../dependencies");
+const userController = di.get("userController");
 const userRouter = express.Router();
 
 userRouter.get("/request/received", profileauth, userController.getReceivedRequests);

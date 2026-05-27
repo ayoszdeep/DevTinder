@@ -6,4 +6,6 @@ const createUser = (data) => new User(data);
 const saveUser = (user) => user.save();
 const findUsers = (query, projection) => User.find(query, projection);
 
-module.exports = { findById, findOne, createUser, saveUser, findUsers };
+const deleteUser = (id) => User.findByIdAndDelete(id);
+
+module.exports = { findById, findOne, createUser, saveUser, findUsers, deleteUser };
